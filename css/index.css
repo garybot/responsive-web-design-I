@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
 header {
 	display: flex;
 	justify-content: space-around;
@@ -155,7 +156,8 @@ footer p {
 
 
 /* Services CSS */
-/*#services-header {
+
+#services-header {
 	display: block;
 }
 #services-header h1 {
@@ -174,7 +176,7 @@ footer p {
 }
 
 .main-item {
-	width: 420px;
+	flex-basis: 47%;
 	margin: 20px auto;
 	padding: 10px;
 	background-color: #f3f3f3;
@@ -201,29 +203,6 @@ ul {
 	list-style-position: inside;
 }
 
-@media (max-width: 600px) {
-	.row {
-		flex-direction: column;
-	}
-
-	.row section {
-		margin: 10px auto;
-	}
-
-	#services {
-		flex-direction: column-reverse;
-	}
-
-	.services-info-img {
-		margin-bottom: 20px;
-	}
-
-	#services ul {
-		margin-top: 10px;
-	}
-}
-*/
-
 /* Media Queries */
 
 @media (max-width: 800px) {
@@ -244,6 +223,16 @@ ul {
 	}
 	header img {
 		display: none;
+	}
+
+	/* Services */
+	#services-header {
+		margin: 20px auto;
+	}
+	
+	#services-header h1 {
+		text-align: center;
+		font-size: 2em;
 	}
 }
 
@@ -276,5 +265,17 @@ ul {
 	}
 	.middle-img {
 		margin: 10px auto;
+	}
+
+	/* Services */
+
+	.services-main {
+		flex-direction: column;
+	}
+	.main-item {
+		flex-basis: 100%;
+	}
+	.main-item h2 {
+		text-align: center;
 	}
 }
