@@ -173,6 +173,7 @@ footer p {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	margin-bottom: 10px;
 }
 
 .main-item {
@@ -226,6 +227,7 @@ ul {
 	}
 
 	/* Services */
+
 	#services-header {
 		margin: 20px auto;
 	}
@@ -233,6 +235,13 @@ ul {
 	#services-header h1 {
 		text-align: center;
 		font-size: 2em;
+	}
+	#services h2 {
+		text-align: center;
+	}
+	.services-info-img {
+		flex-basis: 45%;
+		margin: 0 5px;
 	}
 }
 
@@ -268,14 +277,26 @@ ul {
 	}
 
 	/* Services */
-
 	.services-main {
 		flex-direction: column;
 	}
 	.main-item {
 		flex-basis: 100%;
+		margin: 10px auto;
 	}
 	.main-item h2 {
 		text-align: center;
 	}
+	.main-item a {
+		display: block;
+		text-align: center;
+		width: 50%;
+	}
+	#services {
+		flex-direction: column-reverse;
+	}
+	.services-info-img {
+		margin-bottom: 20px;
+	}
+
 }
